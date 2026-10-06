@@ -1,0 +1,5002 @@
+[
+  {
+    "timestamp": "2026-08-29T21:16:15.352645262Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352651622Z",
+    "stream": "stderr",
+    "text": "goroutine 7 gp=0x11da7b97ed20 m=nil [cleanup wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352739673Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352781473Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x11da7b94cf68 sp=0x11da7b94cf48 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352783043Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352831654Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352838034Z",
+    "stream": "stderr",
+    "text": "runtime.(*cleanupQueue).dequeue(0x10860a0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352894564Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:522 +0xd4 fp=0x11da7b94cfa0 sp=0x11da7b94cf68 pc=0x42a634"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352896614Z",
+    "stream": "stderr",
+    "text": "runtime.runCleanups()"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352966155Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:718 +0x45 fp=0x11da7b94cfe0 sp=0x11da7b94cfa0 pc=0x42aca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.352993425Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353049776Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x11da7b94cfe8 sp=0x11da7b94cfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353094366Z",
+    "stream": "stderr",
+    "text": "created by runtime.(*cleanupQueue).createGs in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353095996Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:672 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353109056Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353155807Z",
+    "stream": "stderr",
+    "text": "goroutine 35 gp=0x11da7b97f680 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353219747Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x11da7bcbc750?, 0x4?, 0x70?, 0x0?, 0x11da7bcbc6c0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353286788Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x11da7bcbc548 sp=0x11da7bcbc528 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353374359Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0x11da7bcbc750, 0x11da7bcbc6b8, 0x0?, 0x0, 0x0?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353415709Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0x11da7bcbc678 sp=0x11da7bcbc548 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353416949Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0x11da7bcaa000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.35349267Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:1203 +0x1e5 fp=0x11da7bcbc7c8 sp=0x11da7bcbc678 pc=0x816de5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.35349408Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353581391Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x17 fp=0x11da7bcbc7e0 sp=0x11da7bcbc7c8 pc=0x80f977"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353582501Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353643211Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x11da7bcbc7e8 sp=0x11da7bcbc7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353666051Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 18"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353726022Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x1929"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353727562Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353753262Z",
+    "stream": "stderr",
+    "text": "goroutine 34 gp=0x11da7b97fa40 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353837593Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x11da7b946690?, 0x2?, 0x3b?, 0x94?, 0x11da7b946664?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353904873Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x11da7b946500 sp=0x11da7b9464e0 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.353988824Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0x11da7b946690, 0x11da7b946660, 0x819673?, 0x0, 0x11da7b946678?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354017504Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0x11da7b946630 sp=0x11da7b946500 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354073585Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*controlBuffer).get(0x11da7bcb6000, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354075425Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:420 +0x10a fp=0x11da7b9466c0 sp=0x11da7b946630 pc=0x7f8d0a"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354124275Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*loopyWriter).run(0x11da7baa0960)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354169616Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:597 +0x78 fp=0x11da7b946720 sp=0x11da7b9466c0 pc=0x7f94b8"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354170496Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.func3()"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354247707Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:342 +0xdc fp=0x11da7b9467e0 sp=0x11da7b946720 pc=0x80fa7c"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354248327Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354281967Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x11da7b9467e8 sp=0x11da7b9467e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354313137Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 18"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354382068Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:340 +0x18e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354383538Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354421808Z",
+    "stream": "stderr",
+    "text": "goroutine 36 gp=0x11da7bcc2000 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354490429Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x11da7b958a48?, 0x7f921c8873a8?, 0xe0?, 0xb?, 0xb?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354559719Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x11da7b958a38 sp=0x11da7b958a18 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354561029Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0x4d7c98?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.35463422Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0x11da7b958a70 sp=0x11da7b958a38 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354696421Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f921c892a00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354697691Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0x11da7b958a90 sp=0x11da7b958a70 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354772951Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0x11da7bb28700?, 0x11da7bc9c000?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354774321Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0x11da7b958ab8 sp=0x11da7b958a90 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354814082Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354814932Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354876782Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Read(0x11da7bb28700, {0x11da7bc9c000, 0x8000, 0x8000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.354943403Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:165 +0x2ae fp=0x11da7b958b50 sp=0x11da7b958ab8 pc=0x4f7a6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355004423Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).Read(0x11da7bb28700, {0x11da7bc9c000?, 0x11da7b96b207?, 0x11da7b958be0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355068764Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_posix.go:68 +0x25 fp=0x11da7b958b98 sp=0x11da7b958b50 pc=0x578e65"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355162195Z",
+    "stream": "stderr",
+    "text": "net.(*conn).Read(0x11da7bb02020, {0x11da7bc9c000?, 0x48560c?, 0xa59aa0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355221265Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/net.go:196 +0x45 fp=0x11da7b958be0 sp=0x11da7b958b98 pc=0x588145"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355293886Z",
+    "stream": "stderr",
+    "text": "bufio.(*Reader).Read(0x11da7bc00060, {0x11da7bca4044, 0x9, 0x4e48da?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355344776Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0x11da7b958c18 sp=0x11da7b958be0 pc=0x5f3e77"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355436757Z",
+    "stream": "stderr",
+    "text": "io.ReadAtLeast({0xb24fe0, 0x11da7bc00060}, {0x11da7bca4044, 0x9, 0x9}, 0x9)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355480938Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:335 +0x8e fp=0x11da7b958c60 sp=0x11da7b958c18 pc=0x4cdbce"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355482678Z",
+    "stream": "stderr",
+    "text": "io.ReadFull(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355519858Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:354"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355569618Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.readFrameHeader({0x11da7bca4044, 0x9, 0x813b72?}, {0xb24fe0?, 0x11da7bc00060?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355630279Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:250 +0x65 fp=0x11da7b958cb0 sp=0x11da7b958c60 pc=0x7e6f85"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355650999Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.(*Framer).ReadFrameHeader(0x11da7bca4000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355689209Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:513 +0x6b fp=0x11da7b958d38 sp=0x11da7b958cb0 pc=0x7e764b"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.35571231Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*framer).readFrame(0x11da7bc86080)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.35579441Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http_util.go:480 +0x45 fp=0x11da7b958d78 sp=0x11da7b958d38 pc=0x81a0e5"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.35579568Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0x11da7bcaa000, {0xb29c20, 0x11da7bc841b0}, 0x11da7bc841e0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.355878381Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:638 +0xff fp=0x11da7b958e98 sp=0x11da7b958d78 pc=0x8126bf"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356005722Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams(0x11da7ba6eb48, {0xb29be8?, 0x10b2dc0?}, {0xb2a140, 0x11da7bcaa000}, {0xb31c18?, 0x11da7bb02020?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356007312Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1059 +0x368 fp=0x11da7b958f70 sp=0x11da7b958e98 pc=0x888ba8"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356023702Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleRawConn.func1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356083133Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:993 +0x56 fp=0x11da7b958fe0 sp=0x11da7b958f70 pc=0x888376"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356124413Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356183154Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x11da7b958fe8 sp=0x11da7b958fe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356219724Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 18"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356241924Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:992 +0x1cb"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356243294Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356263205Z",
+    "stream": "stderr",
+    "text": "rax    0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356284155Z",
+    "stream": "stderr",
+    "text": "rbx    0x46"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356284955Z",
+    "stream": "stderr",
+    "text": "rcx    0x7f921c69eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356299935Z",
+    "stream": "stderr",
+    "text": "rdx    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356300425Z",
+    "stream": "stderr",
+    "text": "rdi    0x34"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356326205Z",
+    "stream": "stderr",
+    "text": "rsi    0x46"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356327295Z",
+    "stream": "stderr",
+    "text": "rbp    0x7f91a1dfc7f0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356340515Z",
+    "stream": "stderr",
+    "text": "rsp    0x7f91a1dfc7b0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356383066Z",
+    "stream": "stderr",
+    "text": "r8     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356383816Z",
+    "stream": "stderr",
+    "text": "r9     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356392976Z",
+    "stream": "stderr",
+    "text": "r10    0x8"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356393576Z",
+    "stream": "stderr",
+    "text": "r11    0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356417196Z",
+    "stream": "stderr",
+    "text": "r12    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356417746Z",
+    "stream": "stderr",
+    "text": "r13    0x7f919de79aa0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356445426Z",
+    "stream": "stderr",
+    "text": "r14    0x16"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356460206Z",
+    "stream": "stderr",
+    "text": "r15    0x7f91a1dfc9b2"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356477067Z",
+    "stream": "stderr",
+    "text": "rip    0x7f921c69eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356478387Z",
+    "stream": "stderr",
+    "text": "rflags 0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356495227Z",
+    "stream": "stderr",
+    "text": "cs     0x33"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356524447Z",
+    "stream": "stderr",
+    "text": "fs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:16:15.356525857Z",
+    "stream": "stderr",
+    "text": "gs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.254822266Z",
+    "stream": "stderr",
+    "text": "+++ realpath run.sh"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.257004373Z",
+    "stream": "stderr",
+    "text": "++ dirname /backends/intel-sycl-f16-stablediffusion-ggml/run.sh"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.259293971Z",
+    "stream": "stderr",
+    "text": "+ CURDIR=/backends/intel-sycl-f16-stablediffusion-ggml"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.259295781Z",
+    "stream": "stderr",
+    "text": "+ cd /"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.259402462Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU info:'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.259433782Z",
+    "stream": "stdout",
+    "text": "CPU info:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.259940006Z",
+    "stream": "stderr",
+    "text": "++ uname"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.262044333Z",
+    "stream": "stderr",
+    "text": "+ '[' Linux '!=' Darwin ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.262498406Z",
+    "stream": "stderr",
+    "text": "+ grep -e 'model\\sname' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.262667328Z",
+    "stream": "stderr",
+    "text": "+ head -1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.265382279Z",
+    "stream": "stdout",
+    "text": "model name\t: AMD Ryzen 7 2700 Eight-Core Processor"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.265810253Z",
+    "stream": "stderr",
+    "text": "+ grep -e flags /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.266103995Z",
+    "stream": "stderr",
+    "text": "+ head -1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.267169054Z",
+    "stream": "stdout",
+    "text": "flags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.267670918Z",
+    "stream": "stderr",
+    "text": "++ uname"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.269566093Z",
+    "stream": "stderr",
+    "text": "+ '[' Linux = Darwin ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.269568473Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-fallback.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.269578693Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.273285992Z",
+    "stream": "stdout",
+    "text": "CPU:    AVX    found OK"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.273311122Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU:    AVX    found OK'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.273312962Z",
+    "stream": "stderr",
+    "text": "+ '[' -e /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.273320782Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.273321942Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx2\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.274749254Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU:    AVX2   found OK'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.274751454Z",
+    "stream": "stderr",
+    "text": "+ '[' -e /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.274753964Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.274754564Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx512f\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.274755084Z",
+    "stream": "stdout",
+    "text": "CPU:    AVX2   found OK"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280230887Z",
+    "stream": "stderr",
+    "text": "+ export LD_LIBRARY_PATH=/backends/intel-sycl-f16-stablediffusion-ggml/lib:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.17/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.17/lib:/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/ippcp/2025.3/lib/:/opt/intel/oneapi/ipp/2022.3/lib:/opt/intel/oneapi/dnnl/2025.3/lib:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/dal/2025.11/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib:/opt/intel/oneapi/ccl/2021.17/lib/"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280234077Z",
+    "stream": "stderr",
+    "text": "+ LD_LIBRARY_PATH=/backends/intel-sycl-f16-stablediffusion-ggml/lib:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.17/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.17/lib:/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/ippcp/2025.3/lib/:/opt/intel/oneapi/ipp/2022.3/lib:/opt/intel/oneapi/dnnl/2025.3/lib:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/dal/2025.11/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib:/opt/intel/oneapi/ccl/2021.17/lib/"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280243757Z",
+    "stream": "stderr",
+    "text": "+ export SD_LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280244927Z",
+    "stream": "stderr",
+    "text": "+ SD_LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280251607Z",
+    "stream": "stderr",
+    "text": "+ '[' -f /backends/intel-sycl-f16-stablediffusion-ggml/lib/ld.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280252797Z",
+    "stream": "stderr",
+    "text": "+ echo 'Using lib/ld.so'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280258397Z",
+    "stream": "stdout",
+    "text": "Using lib/ld.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280259817Z",
+    "stream": "stdout",
+    "text": "Using library: /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280267087Z",
+    "stream": "stderr",
+    "text": "+ echo 'Using library: /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.280268377Z",
+    "stream": "stderr",
+    "text": "+ exec /backends/intel-sycl-f16-stablediffusion-ggml/lib/ld.so /backends/intel-sycl-f16-stablediffusion-ggml/stablediffusion-ggml --addr 127.0.0.1:43275"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:13.369277894Z",
+    "stream": "stderr",
+    "text": "2026/08/29 21:21:13 gRPC Server listening at 127.0.0.1:43275"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256396412Z",
+    "stream": "stderr",
+    "text": "Options: [clip_l_path:/models/clip_l.safetensors clip_g_path:/models/clip_g.safetensors t5xxl_path:/models/t5xxl-Q5_0.gguf sampler:euler]"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256399903Z",
+    "stream": "stderr",
+    "text": "Loading model: 0x3ec9db1da640=/models/sd3.5_large-Q4_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256407093Z",
+    "stream": "stderr",
+    "text": "parsing options: 0x3ec9db1d28a0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256408283Z",
+    "stream": "stderr",
+    "text": "parsed options"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256415573Z",
+    "stream": "stderr",
+    "text": "Creating context"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256416963Z",
+    "stream": "stderr",
+    "text": "LoRA model directory set to: //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256430623Z",
+    "stream": "stderr",
+    "text": "Discovering LoRA files in: //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256431693Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: sd3.5_large-Q4_0 -> //models/sd3.5_large-Q4_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256443993Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: clip_g -> //models/clip_g.safetensors"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256445083Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: clip_l -> //models/clip_l.safetensors"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256462603Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: t5xxl-Q5_0 -> //models/t5xxl-Q5_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256463683Z",
+    "stream": "stderr",
+    "text": "Discovered 4 LoRA files in //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256531534Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:228  - using 8 threads for model loading"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256534264Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:713  - loading model from '/models/sd3.5_large-Q4_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256572664Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:236  - load /models/sd3.5_large-Q4_0.gguf using gguf format"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.256574494Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:288  - init from '/models/sd3.5_large-Q4_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.266495893Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:741  - loading clip_l from '/models/clip_l.safetensors'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.267018737Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:242  - load /models/clip_l.safetensors using safetensors format"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.267022187Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:316  - init from '/models/clip_l.safetensors', prefix = 'clip_l.'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.267973964Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:748  - loading clip_g from '/models/clip_g.safetensors'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.269313605Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:242  - load /models/clip_g.safetensors using safetensors format"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.269314265Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:316  - init from '/models/clip_g.safetensors', prefix = 'clip_g.'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.272112307Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:762  - loading t5xxl from '/models/t5xxl-Q5_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.272114687Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:236  - load /models/t5xxl-Q5_0.gguf using gguf format"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.272123557Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:288  - init from '/models/t5xxl-Q5_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.308443875Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:908  - Version: SD3.x "
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.369108846Z",
+    "stream": "stdout",
+    "text": "Abort was called at 15 line in file:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.369112736Z",
+    "stream": "stdout",
+    "text": "./shared/source/gmm_helper/resource_info.cpp"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371220573Z",
+    "stream": "stderr",
+    "text": "SIGABRT: abort"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371221513Z",
+    "stream": "stderr",
+    "text": "PC=0x7f71e8c9eb2c m=0 sigcode=18446744073709551610"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371227283Z",
+    "stream": "stderr",
+    "text": "signal arrived during cgo execution"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371227963Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371239263Z",
+    "stream": "stderr",
+    "text": "goroutine 25 gp=0x3ec9db2a6000 m=0 mp=0x1087260 [syscall]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371262773Z",
+    "stream": "stderr",
+    "text": "runtime.cgocall(0x907e00, 0x3ec9db28e0d0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371326274Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/cgocall.go:167 +0x4b fp=0x3ec9db1d0d48 sp=0x3ec9db1d0d10 pc=0x484bcb"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371373714Z",
+    "stream": "stderr",
+    "text": "github.com/ebitengine/purego.RegisterFunc.func4({0x3ec9db45b800, 0x5, 0x5})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371425655Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/github.com/ebitengine/purego@v0.10.0/func.go:322 +0x59c fp=0x3ec9db1d1198 sp=0x3ec9db1d0d48 pc=0x90457c"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371473515Z",
+    "stream": "stderr",
+    "text": "reflect.callReflect(0x3ec9db0880c0, 0x3ec9db1d1658, 0x3ec9db1d1530, 0x3ec9db1d1538)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371512365Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/reflect/value.go:772 +0x5f6 fp=0x3ec9db1d14e0 sp=0x3ec9db1d1198 pc=0x4b9596"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371565216Z",
+    "stream": "stderr",
+    "text": "reflect.callReflect(0x3ec9db0880c0, 0x3ec9db1d1658, 0x3ec9db1d1530, 0x3ec9db1d1538)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371617276Z",
+    "stream": "stderr",
+    "text": "\t<autogenerated>:1 +0x2e fp=0x3ec9db1d1510 sp=0x3ec9db1d14e0 pc=0x4cae6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371618216Z",
+    "stream": "stderr",
+    "text": "reflect.makeFuncStub()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371684837Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/reflect/asm_amd64.s:47 +0x5c fp=0x3ec9db1d1658 sp=0x3ec9db1d1510 pc=0x4c7bfc"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371686687Z",
+    "stream": "stderr",
+    "text": "main.(*SDGGML).Load(0x3ec9db144000, 0x3ec9db43e008)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371722057Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/backend/go/stablediffusion-ggml/gosd.go:165 +0x743 fp=0x3ec9db1d1810 sp=0x3ec9db1d1658 pc=0x917303"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371783887Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc.(*server).LoadModel(0x3ec9db1260c0, {0xadd580?, 0x526f53?}, 0x3ec9db43e008)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371824868Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/server.go:111 +0xe2 fp=0x3ec9db1d18c0 sp=0x3ec9db1d1810 pc=0x90b5a2"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371899118Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc/proto._Backend_LoadModel_Handler({0xadd580, 0x3ec9db1260c0}, {0xb29c20, 0x3ec9db4230e0}, 0x3ec9db22af80, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.371956499Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/proto/backend_grpc.pb.go:1249 +0x1a9 fp=0x3ec9db1d1910 sp=0x3ec9db1d18c0 pc=0x8b8269"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372040869Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).processUnaryRPC(0x3ec9db142488, {0xb29c20, 0x3ec9db423050}, 0x3ec9db20b380, 0x3ec9db088ff0, 0x1079688, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37207394Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1430 +0x11d2 fp=0x3ec9db1d1dd0 sp=0x3ec9db1d1910 pc=0x88b4d2"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37215097Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleStream(0x3ec9db142488, {0xb2a140, 0x3ec9db3a8000}, 0x3ec9db20b380)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37216993Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1856 +0xbc6 fp=0x3ec9db1d1f78 sp=0x3ec9db1d1dd0 pc=0x890626"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372200871Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams.func2.1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372265191Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1065 +0x7f fp=0x3ec9db1d1fe0 sp=0x3ec9db1d1f78 pc=0x888dff"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372298411Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372355322Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db1d1fe8 sp=0x3ec9db1d1fe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372356432Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).serveStreams.func2 in goroutine 36"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372427302Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1076 +0x11d"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372428992Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372458833Z",
+    "stream": "stderr",
+    "text": "goroutine 1 gp=0x3ec9db0561e0 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372524253Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372554943Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db24d8b0 sp=0x3ec9db24d890 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372620524Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0x3ec9db24d900?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372677774Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0x3ec9db24d8e8 sp=0x3ec9db24d8b0 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372679684Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f71e8a52e00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372750415Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0x3ec9db24d908 sp=0x3ec9db24d8e8 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372778395Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0x3ec9db0b4080?, 0x900000036?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372824826Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0x3ec9db24d930 sp=0x3ec9db24d908 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372854386Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372855746Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372892726Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Accept(0x3ec9db0b4080)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372943757Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:613 +0x28c fp=0x3ec9db24d9d8 sp=0x3ec9db24d930 pc=0x4fb8cc"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.372996947Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).accept(0x3ec9db0b4080)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373019447Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_unix.go:150 +0x29 fp=0x3ec9db24da90 sp=0x3ec9db24d9d8 pc=0x57aba9"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373075218Z",
+    "stream": "stderr",
+    "text": "net.(*TCPListener).accept(0x3ec9db126040)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373111368Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/tcpsock_posix.go:159 +0x1b fp=0x3ec9db24dae0 sp=0x3ec9db24da90 pc=0x590d3b"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373112438Z",
+    "stream": "stderr",
+    "text": "net.(*TCPListener).Accept(0x3ec9db126040)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373164328Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/tcpsock.go:387 +0x30 fp=0x3ec9db24db10 sp=0x3ec9db24dae0 pc=0x58ffd0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373268149Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).Serve(0x3ec9db142488, {0xb29298, 0x3ec9db126040})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373270999Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:921 +0x45c fp=0x3ec9db24dc50 sp=0x3ec9db24db10 pc=0x88793c"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.3733987Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc.StartServer({0x7ffcd454eaa5?, 0x3ec9db1a4160?}, {0xb39000, 0x3ec9db144000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37342272Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/server.go:1104 +0x165 fp=0x3ec9db24dcd8 sp=0x3ec9db24dc50 pc=0x916285"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373444251Z",
+    "stream": "stderr",
+    "text": "main.main()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373490541Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/backend/go/stablediffusion-ggml/main.go:65 +0x33a fp=0x3ec9db24df48 sp=0x3ec9db24dcd8 pc=0x91821a"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373535431Z",
+    "stream": "stderr",
+    "text": "runtime.main()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373571122Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:290 +0x2d5 fp=0x3ec9db24dfe0 sp=0x3ec9db24df48 pc=0x4533d5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373572512Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373653602Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db24dfe8 sp=0x3ec9db24dfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373654722Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373664642Z",
+    "stream": "stderr",
+    "text": "goroutine 2 gp=0x3ec9db056d20 m=nil [force gc (idle)]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373742133Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373772533Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0fafa8 sp=0x3ec9db0faf88 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373810183Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373810873Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373818543Z",
+    "stream": "stderr",
+    "text": "runtime.forcegchelper()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373881094Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:375 +0xb3 fp=0x3ec9db0fafe0 sp=0x3ec9db0fafa8 pc=0x4536f3"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373900464Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373975995Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0fafe8 sp=0x3ec9db0fafe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.373977045Z",
+    "stream": "stderr",
+    "text": "created by runtime.init.7 in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374028885Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:363 +0x1a"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374029795Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374040915Z",
+    "stream": "stderr",
+    "text": "goroutine 3 gp=0x3ec9db0572c0 m=nil [GC sweep wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374107726Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374183806Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0fb788 sp=0x3ec9db0fb768 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374184616Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374232937Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374233567Z",
+    "stream": "stderr",
+    "text": "runtime.bgsweep(0x3ec9db124000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374304487Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcsweep.go:279 +0x94 fp=0x3ec9db0fb7c8 sp=0x3ec9db0fb788 pc=0x43d414"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374305217Z",
+    "stream": "stderr",
+    "text": "runtime.gcenable.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374354038Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:214 +0x17 fp=0x3ec9db0fb7e0 sp=0x3ec9db0fb7c8 pc=0x42e877"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374384188Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374418748Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0fb7e8 sp=0x3ec9db0fb7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374455088Z",
+    "stream": "stderr",
+    "text": "created by runtime.gcenable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374457589Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:214 +0x66"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374458279Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374512089Z",
+    "stream": "stderr",
+    "text": "goroutine 4 gp=0x3ec9db0574a0 m=nil [GC scavenge wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374563459Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x3ec9db124000?, 0xb1d8f0?, 0x1?, 0x0?, 0x3ec9db0574a0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37462724Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0fbf78 sp=0x3ec9db0fbf58 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37462833Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37467357Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37467793Z",
+    "stream": "stderr",
+    "text": "runtime.(*scavengerState).park(0x1085d20)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374734591Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcscavenge.go:425 +0x49 fp=0x3ec9db0fbfa8 sp=0x3ec9db0fbf78 pc=0x43af49"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374736141Z",
+    "stream": "stderr",
+    "text": "runtime.bgscavenge(0x3ec9db124000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374808971Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcscavenge.go:653 +0x3c fp=0x3ec9db0fbfc8 sp=0x3ec9db0fbfa8 pc=0x43b4bc"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374810581Z",
+    "stream": "stderr",
+    "text": "runtime.gcenable.gowrap2()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374883382Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:215 +0x17 fp=0x3ec9db0fbfe0 sp=0x3ec9db0fbfc8 pc=0x42e837"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374884612Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374938102Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0fbfe8 sp=0x3ec9db0fbfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374982043Z",
+    "stream": "stderr",
+    "text": "created by runtime.gcenable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.374983643Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:215 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375011723Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375029573Z",
+    "stream": "stderr",
+    "text": "goroutine 18 gp=0x3ec9db1843c0 m=nil [GOMAXPROCS updater (idle)]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375120264Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375198094Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0f6788 sp=0x3ec9db0f6768 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375200064Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375212535Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375213545Z",
+    "stream": "stderr",
+    "text": "runtime.updateMaxProcsGoroutine()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375282325Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:7095 +0xe7 fp=0x3ec9db0f67e0 sp=0x3ec9db0f6788 pc=0x461b87"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375303345Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375347886Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0f67e8 sp=0x3ec9db0f67e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375374906Z",
+    "stream": "stderr",
+    "text": "created by runtime.defaultGOMAXPROCSUpdateEnable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375413486Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:7083 +0x37"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375414556Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375439006Z",
+    "stream": "stderr",
+    "text": "goroutine 19 gp=0x3ec9db184960 m=nil [finalizer wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375500417Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x462bd5?, 0x1c8?, 0x80?, 0x46?, 0x3ec9db0fa601?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375557567Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0fa620 sp=0x3ec9db0fa600 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375559207Z",
+    "stream": "stderr",
+    "text": "runtime.runFinalizers()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375637808Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mfinal.go:210 +0x107 fp=0x3ec9db0fa7e0 sp=0x3ec9db0fa620 pc=0x42d7e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375638688Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375702858Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0fa7e8 sp=0x3ec9db0fa7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375704489Z",
+    "stream": "stderr",
+    "text": "created by runtime.createfing in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375740719Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mfinal.go:172 +0x3d"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375741859Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375773619Z",
+    "stream": "stderr",
+    "text": "goroutine 20 gp=0x3ec9db1854a0 m=nil [cleanup wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37585147Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37591691Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0f6f68 sp=0x3ec9db0f6f48 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37591767Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375966721Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.375967411Z",
+    "stream": "stderr",
+    "text": "runtime.(*cleanupQueue).dequeue(0x10860a0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376041631Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:522 +0xd4 fp=0x3ec9db0f6fa0 sp=0x3ec9db0f6f68 pc=0x42a634"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376042471Z",
+    "stream": "stderr",
+    "text": "runtime.runCleanups()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376082022Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:718 +0x45 fp=0x3ec9db0f6fe0 sp=0x3ec9db0f6fa0 pc=0x42aca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376144132Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376146072Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0f6fe8 sp=0x3ec9db0f6fe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376196892Z",
+    "stream": "stderr",
+    "text": "created by runtime.(*cleanupQueue).createGs in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376197872Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:672 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376217653Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376248983Z",
+    "stream": "stderr",
+    "text": "goroutine 35 gp=0x3ec9db185c20 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376308943Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x3ec9db3bc750?, 0x4?, 0x70?, 0x0?, 0x3ec9db3bc6c0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376363454Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db3bc548 sp=0x3ec9db3bc528 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376438714Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0x3ec9db3bc750, 0x3ec9db3bc6b8, 0x0?, 0x0, 0x0?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376486595Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0x3ec9db3bc678 sp=0x3ec9db3bc548 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376488255Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0x3ec9db3a8000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376560775Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:1203 +0x1e5 fp=0x3ec9db3bc7c8 sp=0x3ec9db3bc678 pc=0x816de5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376562175Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376632686Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x17 fp=0x3ec9db3bc7e0 sp=0x3ec9db3bc7c8 pc=0x80f977"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376657026Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376699646Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db3bc7e8 sp=0x3ec9db3bc7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376712466Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 6"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376746207Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x1929"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376746987Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376807667Z",
+    "stream": "stderr",
+    "text": "goroutine 34 gp=0x3ec9db2a61e0 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376881928Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x3ec9db0fc690?, 0x2?, 0x3b?, 0x94?, 0x3ec9db0fc664?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376934648Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db0fc500 sp=0x3ec9db0fc4e0 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.376986199Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0x3ec9db0fc690, 0x3ec9db0fc660, 0x819673?, 0x0, 0x3ec9db0fc678?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377023869Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0x3ec9db0fc630 sp=0x3ec9db0fc500 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377045839Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*controlBuffer).get(0x3ec9db3b6000, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377092689Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:420 +0x10a fp=0x3ec9db0fc6c0 sp=0x3ec9db0fc630 pc=0x7f8d0a"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37712053Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*loopyWriter).run(0x3ec9db268820)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37714914Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:597 +0x78 fp=0x3ec9db0fc720 sp=0x3ec9db0fc6c0 pc=0x7f94b8"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37718465Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.func3()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37722032Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:342 +0xdc fp=0x3ec9db0fc7e0 sp=0x3ec9db0fc720 pc=0x80fa7c"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377236891Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377308281Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db0fc7e8 sp=0x3ec9db0fc7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377309941Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 6"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377347911Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:340 +0x18e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377349111Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377407462Z",
+    "stream": "stderr",
+    "text": "goroutine 36 gp=0x3ec9db3c2000 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377450262Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x3ec9db10dd68?, 0x81200c?, 0x80?, 0xb3?, 0xb?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377504443Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x3ec9db10da38 sp=0x3ec9db10da18 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377566393Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0x4d7c98?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377614774Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0x3ec9db10da70 sp=0x3ec9db10da38 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377648934Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f71e8a52c00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377672454Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0x3ec9db10da90 sp=0x3ec9db10da70 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377722664Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0x3ec9db0b4380?, 0x3ec9db38e000?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377782735Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0x3ec9db10dab8 sp=0x3ec9db10da90 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377784265Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377810265Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377848915Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Read(0x3ec9db0b4380, {0x3ec9db38e000, 0x8000, 0x8000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377909676Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:165 +0x2ae fp=0x3ec9db10db50 sp=0x3ec9db10dab8 pc=0x4f7a6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.377960456Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).Read(0x3ec9db0b4380, {0x3ec9db38e000?, 0x3ec9db1b2ec0?, 0x3ec9db10dbe0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378014767Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_posix.go:68 +0x25 fp=0x3ec9db10db98 sp=0x3ec9db10db50 pc=0x578e65"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378089227Z",
+    "stream": "stderr",
+    "text": "net.(*conn).Read(0x3ec9db054080, {0x3ec9db38e000?, 0x48560c?, 0xa59aa0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378136518Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/net.go:196 +0x45 fp=0x3ec9db10dbe0 sp=0x3ec9db10db98 pc=0x588145"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378175278Z",
+    "stream": "stderr",
+    "text": "bufio.(*Reader).Read(0x3ec9db38c000, {0x3ec9db396044, 0x9, 0x4e48da?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378244399Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0x3ec9db10dc18 sp=0x3ec9db10dbe0 pc=0x5f3e77"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37836027Z",
+    "stream": "stderr",
+    "text": "io.ReadAtLeast({0xb24fe0, 0x3ec9db38c000}, {0x3ec9db396044, 0x9, 0x9}, 0x9)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37836175Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:335 +0x8e fp=0x3ec9db10dc60 sp=0x3ec9db10dc18 pc=0x4cdbce"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37837745Z",
+    "stream": "stderr",
+    "text": "io.ReadFull(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.37841705Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:354"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378484681Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.readFrameHeader({0x3ec9db396044, 0x9, 0x813b72?}, {0xb24fe0?, 0x3ec9db38c000?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378536601Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:250 +0x65 fp=0x3ec9db10dcb0 sp=0x3ec9db10dc60 pc=0x7e6f85"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378538021Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.(*Framer).ReadFrameHeader(0x3ec9db396000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378612212Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:513 +0x6b fp=0x3ec9db10dd38 sp=0x3ec9db10dcb0 pc=0x7e764b"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378613622Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*framer).readFrame(0x3ec9db398000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378669422Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http_util.go:480 +0x45 fp=0x3ec9db10dd78 sp=0x3ec9db10dd38 pc=0x81a0e5"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378715172Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0x3ec9db3a8000, {0xb29c20, 0x3ec9db39a180}, 0x3ec9db39a1b0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378764613Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:638 +0xff fp=0x3ec9db10de98 sp=0x3ec9db10dd78 pc=0x8126bf"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378883234Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams(0x3ec9db142488, {0xb29be8?, 0x10b2dc0?}, {0xb2a140, 0x3ec9db3a8000}, {0xb31c18?, 0x3ec9db054080?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378937684Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1059 +0x368 fp=0x3ec9db10df70 sp=0x3ec9db10de98 pc=0x888ba8"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378939254Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleRawConn.func1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378981354Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:993 +0x56 fp=0x3ec9db10dfe0 sp=0x3ec9db10df70 pc=0x888376"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.378982514Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379033185Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x3ec9db10dfe8 sp=0x3ec9db10dfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379081115Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 6"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379082845Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:992 +0x1cb"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379095395Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379096495Z",
+    "stream": "stderr",
+    "text": "rax    0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379108705Z",
+    "stream": "stderr",
+    "text": "rbx    0x59"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379109785Z",
+    "stream": "stderr",
+    "text": "rcx    0x7f71e8c9eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379128616Z",
+    "stream": "stderr",
+    "text": "rdx    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379129866Z",
+    "stream": "stderr",
+    "text": "rdi    0x59"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379145806Z",
+    "stream": "stderr",
+    "text": "rsi    0x59"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379168116Z",
+    "stream": "stderr",
+    "text": "rbp    0x7ffcd454ab20"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379210716Z",
+    "stream": "stderr",
+    "text": "rsp    0x7ffcd454aae0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379211646Z",
+    "stream": "stderr",
+    "text": "r8     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379216456Z",
+    "stream": "stderr",
+    "text": "r9     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379216886Z",
+    "stream": "stderr",
+    "text": "r10    0x8"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379237156Z",
+    "stream": "stderr",
+    "text": "r11    0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379237646Z",
+    "stream": "stderr",
+    "text": "r12    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379265577Z",
+    "stream": "stderr",
+    "text": "r13    0x555580ae6200"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379266047Z",
+    "stream": "stderr",
+    "text": "r14    0x16"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379272787Z",
+    "stream": "stderr",
+    "text": "r15    0x7ffcd454ace2"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379324477Z",
+    "stream": "stderr",
+    "text": "rip    0x7f71e8c9eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379326077Z",
+    "stream": "stderr",
+    "text": "rflags 0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379332107Z",
+    "stream": "stderr",
+    "text": "cs     0x33"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379333157Z",
+    "stream": "stderr",
+    "text": "fs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:21:15.379344517Z",
+    "stream": "stderr",
+    "text": "gs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.238030792Z",
+    "stream": "stderr",
+    "text": "+++ realpath run.sh"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.23897609Z",
+    "stream": "stderr",
+    "text": "++ dirname /backends/intel-sycl-f16-stablediffusion-ggml/run.sh"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.24163056Z",
+    "stream": "stderr",
+    "text": "+ CURDIR=/backends/intel-sycl-f16-stablediffusion-ggml"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.2416319Z",
+    "stream": "stderr",
+    "text": "+ cd /"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.241718081Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU info:'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.241803272Z",
+    "stream": "stdout",
+    "text": "CPU info:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.242333066Z",
+    "stream": "stderr",
+    "text": "++ uname"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.243518855Z",
+    "stream": "stderr",
+    "text": "+ '[' Linux '!=' Darwin ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.243877238Z",
+    "stream": "stderr",
+    "text": "+ grep -e 'model\\sname' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.24424275Z",
+    "stream": "stderr",
+    "text": "+ head -1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.24675006Z",
+    "stream": "stdout",
+    "text": "model name\t: AMD Ryzen 7 2700 Eight-Core Processor"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.247320084Z",
+    "stream": "stderr",
+    "text": "+ grep -e flags /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.247467075Z",
+    "stream": "stderr",
+    "text": "+ head -1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.249171069Z",
+    "stream": "stdout",
+    "text": "flags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.249862144Z",
+    "stream": "stderr",
+    "text": "++ uname"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.251234295Z",
+    "stream": "stderr",
+    "text": "+ '[' Linux = Darwin ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.251242025Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-fallback.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.251258895Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.253876355Z",
+    "stream": "stdout",
+    "text": "CPU:    AVX    found OK"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.253909205Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU:    AVX    found OK'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.253911475Z",
+    "stream": "stderr",
+    "text": "+ '[' -e /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.253918855Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.253920086Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx2\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.255966481Z",
+    "stream": "stdout",
+    "text": "CPU:    AVX2   found OK"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.256001762Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU:    AVX2   found OK'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.256004592Z",
+    "stream": "stderr",
+    "text": "+ '[' -e /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.256011402Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.256012492Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx512f\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257857286Z",
+    "stream": "stderr",
+    "text": "+ export LD_LIBRARY_PATH=/backends/intel-sycl-f16-stablediffusion-ggml/lib:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.17/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.17/lib:/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/ippcp/2025.3/lib/:/opt/intel/oneapi/ipp/2022.3/lib:/opt/intel/oneapi/dnnl/2025.3/lib:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/dal/2025.11/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib:/opt/intel/oneapi/ccl/2021.17/lib/"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257859606Z",
+    "stream": "stderr",
+    "text": "+ LD_LIBRARY_PATH=/backends/intel-sycl-f16-stablediffusion-ggml/lib:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.17/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.17/lib:/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/ippcp/2025.3/lib/:/opt/intel/oneapi/ipp/2022.3/lib:/opt/intel/oneapi/dnnl/2025.3/lib:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/dal/2025.11/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib:/opt/intel/oneapi/ccl/2021.17/lib/"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257868226Z",
+    "stream": "stderr",
+    "text": "+ export SD_LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257869446Z",
+    "stream": "stderr",
+    "text": "+ SD_LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257884066Z",
+    "stream": "stderr",
+    "text": "+ '[' -f /backends/intel-sycl-f16-stablediffusion-ggml/lib/ld.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257885356Z",
+    "stream": "stderr",
+    "text": "+ echo 'Using lib/ld.so'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257893836Z",
+    "stream": "stderr",
+    "text": "+ echo 'Using library: /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257894996Z",
+    "stream": "stderr",
+    "text": "+ exec /backends/intel-sycl-f16-stablediffusion-ggml/lib/ld.so /backends/intel-sycl-f16-stablediffusion-ggml/stablediffusion-ggml --addr 127.0.0.1:41253"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257906556Z",
+    "stream": "stdout",
+    "text": "Using lib/ld.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.257909327Z",
+    "stream": "stdout",
+    "text": "Using library: /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:27.345063802Z",
+    "stream": "stderr",
+    "text": "2026/08/29 21:22:27 gRPC Server listening at 127.0.0.1:41253"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.239859133Z",
+    "stream": "stderr",
+    "text": "Options: [clip_l_path:/models/clip_l.safetensors clip_g_path:/models/clip_g.safetensors t5xxl_path:/models/t5xxl-Q5_0.gguf sampler:euler]"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.239861183Z",
+    "stream": "stderr",
+    "text": "Loading model: 0x2488d1be29e0=/models/sd3.5_large-Q4_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.239864843Z",
+    "stream": "stderr",
+    "text": "parsing options: 0x2488d1bdae70"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.239865413Z",
+    "stream": "stderr",
+    "text": "parsed options"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.239871843Z",
+    "stream": "stderr",
+    "text": "Creating context"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240004324Z",
+    "stream": "stderr",
+    "text": "LoRA model directory set to: //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240005514Z",
+    "stream": "stderr",
+    "text": "Discovering LoRA files in: //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240082405Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: sd3.5_large-Q4_0 -> //models/sd3.5_large-Q4_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240083345Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: clip_g -> //models/clip_g.safetensors"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240086325Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: clip_l -> //models/clip_l.safetensors"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240086745Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: t5xxl-Q5_0 -> //models/t5xxl-Q5_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240092915Z",
+    "stream": "stderr",
+    "text": "Discovered 4 LoRA files in //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240233466Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:228  - using 8 threads for model loading"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240262146Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:713  - loading model from '/models/sd3.5_large-Q4_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240401027Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:236  - load /models/sd3.5_large-Q4_0.gguf using gguf format"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.240403957Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:288  - init from '/models/sd3.5_large-Q4_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.261859103Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:741  - loading clip_l from '/models/clip_l.safetensors'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.262968572Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:242  - load /models/clip_l.safetensors using safetensors format"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.262971802Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:316  - init from '/models/clip_l.safetensors', prefix = 'clip_l.'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.26533793Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:748  - loading clip_g from '/models/clip_g.safetensors'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.268227253Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:242  - load /models/clip_g.safetensors using safetensors format"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.268229633Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:316  - init from '/models/clip_g.safetensors', prefix = 'clip_g.'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.275051296Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:762  - loading t5xxl from '/models/t5xxl-Q5_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.275054176Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:236  - load /models/t5xxl-Q5_0.gguf using gguf format"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.275072596Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:288  - init from '/models/t5xxl-Q5_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.318955916Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:908  - Version: SD3.x "
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.381668192Z",
+    "stream": "stdout",
+    "text": "Abort was called at 15 line in file:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.381674572Z",
+    "stream": "stdout",
+    "text": "./shared/source/gmm_helper/resource_info.cpp"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383734418Z",
+    "stream": "stderr",
+    "text": "SIGABRT: abort"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383737508Z",
+    "stream": "stderr",
+    "text": "PC=0x7f682769eb2c m=0 sigcode=18446744073709551610"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383744228Z",
+    "stream": "stderr",
+    "text": "signal arrived during cgo execution"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383745298Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383754998Z",
+    "stream": "stderr",
+    "text": "goroutine 26 gp=0x2488d1d2c000 m=0 mp=0x1087260 [syscall]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383756118Z",
+    "stream": "stderr",
+    "text": "runtime.cgocall(0x907e00, 0x2488d1d16000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383843699Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/cgocall.go:167 +0x4b fp=0x2488d1bd6d48 sp=0x2488d1bd6d10 pc=0x484bcb"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383845239Z",
+    "stream": "stderr",
+    "text": "github.com/ebitengine/purego.RegisterFunc.func4({0x2488d1d57280, 0x5, 0x5})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.383929229Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/github.com/ebitengine/purego@v0.10.0/func.go:322 +0x59c fp=0x2488d1bd7198 sp=0x2488d1bd6d48 pc=0x90457c"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38397562Z",
+    "stream": "stderr",
+    "text": "reflect.callReflect(0x2488d1cf0a50, 0x2488d1bd7658, 0x2488d1bd7530, 0x2488d1bd7538)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38405211Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/reflect/value.go:772 +0x5f6 fp=0x2488d1bd74e0 sp=0x2488d1bd7198 pc=0x4b9596"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38405381Z",
+    "stream": "stderr",
+    "text": "reflect.callReflect(0x2488d1cf0a50, 0x2488d1bd7658, 0x2488d1bd7530, 0x2488d1bd7538)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384128841Z",
+    "stream": "stderr",
+    "text": "\t<autogenerated>:1 +0x2e fp=0x2488d1bd7510 sp=0x2488d1bd74e0 pc=0x4cae6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384130241Z",
+    "stream": "stderr",
+    "text": "reflect.makeFuncStub()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384222492Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/reflect/asm_amd64.s:47 +0x5c fp=0x2488d1bd7658 sp=0x2488d1bd7510 pc=0x4c7bfc"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384224332Z",
+    "stream": "stderr",
+    "text": "main.(*SDGGML).Load(0x2488d1c9a5f0, 0x2488d1d3c008)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384299792Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/backend/go/stablediffusion-ggml/gosd.go:165 +0x743 fp=0x2488d1bd7810 sp=0x2488d1bd7658 pc=0x917303"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384364823Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc.(*server).LoadModel(0x2488d1bb8cc0, {0xadd580?, 0x526f53?}, 0x2488d1d3c008)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384396553Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/server.go:111 +0xe2 fp=0x2488d1bd78c0 sp=0x2488d1bd7810 pc=0x90b5a2"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384501284Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc/proto._Backend_LoadModel_Handler({0xadd580, 0x2488d1bb8cc0}, {0xb29c20, 0x2488d1d3a060}, 0x2488d1cb2a00, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384542684Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/proto/backend_grpc.pb.go:1249 +0x1a9 fp=0x2488d1bd7910 sp=0x2488d1bd78c0 pc=0x8b8269"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384693425Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).processUnaryRPC(0x2488d1caeb48, {0xb29c20, 0x2488d1cf1ec0}, 0x2488d1c93520, 0x2488d1cf1980, 0x1079688, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384695585Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1430 +0x11d2 fp=0x2488d1bd7dd0 sp=0x2488d1bd7910 pc=0x88b4d2"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384769856Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleStream(0x2488d1caeb48, {0xb2a140, 0x2488d1c93380}, 0x2488d1c93520)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384802796Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1856 +0xbc6 fp=0x2488d1bd7f78 sp=0x2488d1bd7dd0 pc=0x890626"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384823136Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams.func2.1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384938837Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1065 +0x7f fp=0x2488d1bd7fe0 sp=0x2488d1bd7f78 pc=0x888dff"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384940397Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.384960377Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1bd7fe8 sp=0x2488d1bd7fe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385005008Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).serveStreams.func2 in goroutine 25"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385050808Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1076 +0x11d"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385053358Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385076238Z",
+    "stream": "stderr",
+    "text": "goroutine 1 gp=0x2488d1aaa1e0 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385156409Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385187029Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1cd58b0 sp=0x2488d1cd5890 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38527487Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0x2488d1cd5900?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.3853242Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0x2488d1cd58e8 sp=0x2488d1cd58b0 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.3853261Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f67ddb1ee00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385385491Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0x2488d1cd5908 sp=0x2488d1cd58e8 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385459251Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0x2488d1cb2700?, 0x900000036?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385527342Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0x2488d1cd5930 sp=0x2488d1cd5908 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385528862Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385550022Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385588982Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Accept(0x2488d1cb2700)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385640943Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:613 +0x28c fp=0x2488d1cd59d8 sp=0x2488d1cd5930 pc=0x4fb8cc"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385670203Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).accept(0x2488d1cb2700)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385739943Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_unix.go:150 +0x29 fp=0x2488d1cd5a90 sp=0x2488d1cd59d8 pc=0x57aba9"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385763804Z",
+    "stream": "stderr",
+    "text": "net.(*TCPListener).accept(0x2488d1bb8c40)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385818754Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/tcpsock_posix.go:159 +0x1b fp=0x2488d1cd5ae0 sp=0x2488d1cd5a90 pc=0x590d3b"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385820424Z",
+    "stream": "stderr",
+    "text": "net.(*TCPListener).Accept(0x2488d1bb8c40)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385896495Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/tcpsock.go:387 +0x30 fp=0x2488d1cd5b10 sp=0x2488d1cd5ae0 pc=0x58ffd0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.385946855Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).Serve(0x2488d1caeb48, {0xb29298, 0x2488d1bb8c40})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386015046Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:921 +0x45c fp=0x2488d1cd5c50 sp=0x2488d1cd5b10 pc=0x88793c"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386133067Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc.StartServer({0x7ffcb1d63aa5?, 0x2488d1bac160?}, {0xb39000, 0x2488d1c9a5f0})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386134667Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/server.go:1104 +0x165 fp=0x2488d1cd5cd8 sp=0x2488d1cd5c50 pc=0x916285"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386162267Z",
+    "stream": "stderr",
+    "text": "main.main()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386228547Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/backend/go/stablediffusion-ggml/main.go:65 +0x33a fp=0x2488d1cd5f48 sp=0x2488d1cd5cd8 pc=0x91821a"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386250207Z",
+    "stream": "stderr",
+    "text": "runtime.main()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386332498Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:290 +0x2d5 fp=0x2488d1cd5fe0 sp=0x2488d1cd5f48 pc=0x4533d5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386334338Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386395059Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1cd5fe8 sp=0x2488d1cd5fe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386397029Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386451879Z",
+    "stream": "stderr",
+    "text": "goroutine 2 gp=0x2488d1aaad20 m=nil [force gc (idle)]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38654105Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38660541Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4efa8 sp=0x2488d1b4ef88 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38660701Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38662946Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386675661Z",
+    "stream": "stderr",
+    "text": "runtime.forcegchelper()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386711101Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:375 +0xb3 fp=0x2488d1b4efe0 sp=0x2488d1b4efa8 pc=0x4536f3"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386762221Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386787652Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4efe8 sp=0x2488d1b4efe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386820592Z",
+    "stream": "stderr",
+    "text": "created by runtime.init.7 in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386842182Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:363 +0x1a"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386843722Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386890892Z",
+    "stream": "stderr",
+    "text": "goroutine 3 gp=0x2488d1aab2c0 m=nil [GC sweep wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.386963923Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387026233Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4f788 sp=0x2488d1b4f768 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387027713Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387071354Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387073314Z",
+    "stream": "stderr",
+    "text": "runtime.bgsweep(0x2488d1b78000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387136214Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcsweep.go:279 +0x94 fp=0x2488d1b4f7c8 sp=0x2488d1b4f788 pc=0x43d414"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387137824Z",
+    "stream": "stderr",
+    "text": "runtime.gcenable.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387236305Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:214 +0x17 fp=0x2488d1b4f7e0 sp=0x2488d1b4f7c8 pc=0x42e877"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387237885Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387297345Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4f7e8 sp=0x2488d1b4f7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387298885Z",
+    "stream": "stderr",
+    "text": "created by runtime.gcenable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387342996Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:214 +0x66"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387344396Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387418456Z",
+    "stream": "stderr",
+    "text": "goroutine 4 gp=0x2488d1aab4a0 m=nil [GC scavenge wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387470897Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x2488d1b78000?, 0xb1d8f0?, 0x1?, 0x0?, 0x2488d1aab4a0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387516767Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4ff78 sp=0x2488d1b4ff58 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387554557Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387556097Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387596348Z",
+    "stream": "stderr",
+    "text": "runtime.(*scavengerState).park(0x1085d20)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387660498Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcscavenge.go:425 +0x49 fp=0x2488d1b4ffa8 sp=0x2488d1b4ff78 pc=0x43af49"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387662218Z",
+    "stream": "stderr",
+    "text": "runtime.bgscavenge(0x2488d1b78000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387719449Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcscavenge.go:653 +0x3c fp=0x2488d1b4ffc8 sp=0x2488d1b4ffa8 pc=0x43b4bc"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387720739Z",
+    "stream": "stderr",
+    "text": "runtime.gcenable.gowrap2()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387791499Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:215 +0x17 fp=0x2488d1b4ffe0 sp=0x2488d1b4ffc8 pc=0x42e837"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38783693Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38786666Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4ffe8 sp=0x2488d1b4ffe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.3879115Z",
+    "stream": "stderr",
+    "text": "created by runtime.gcenable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38791301Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:215 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38792924Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.387973321Z",
+    "stream": "stderr",
+    "text": "goroutine 18 gp=0x2488d1b8c3c0 m=nil [GOMAXPROCS updater (idle)]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388065211Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388101022Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4a788 sp=0x2488d1b4a768 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388126962Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388128742Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388155692Z",
+    "stream": "stderr",
+    "text": "runtime.updateMaxProcsGoroutine()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388252393Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:7095 +0xe7 fp=0x2488d1b4a7e0 sp=0x2488d1b4a788 pc=0x461b87"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388254543Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388320163Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4a7e8 sp=0x2488d1b4a7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388395564Z",
+    "stream": "stderr",
+    "text": "created by runtime.defaultGOMAXPROCSUpdateEnable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388396934Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:7083 +0x37"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388404024Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388405354Z",
+    "stream": "stderr",
+    "text": "goroutine 19 gp=0x2488d1b8c960 m=nil [finalizer wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388471775Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x462bd5?, 0x1c8?, 0x80?, 0x46?, 0x2488d1b4e601?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388510055Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4e620 sp=0x2488d1b4e600 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388536465Z",
+    "stream": "stderr",
+    "text": "runtime.runFinalizers()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388593875Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mfinal.go:210 +0x107 fp=0x2488d1b4e7e0 sp=0x2488d1b4e620 pc=0x42d7e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388638616Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388728987Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4e7e8 sp=0x2488d1b4e7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388730707Z",
+    "stream": "stderr",
+    "text": "created by runtime.createfing in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388738087Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mfinal.go:172 +0x3d"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388739287Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388788067Z",
+    "stream": "stderr",
+    "text": "goroutine 20 gp=0x2488d1b8d4a0 m=nil [cleanup wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388858888Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388926308Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4af68 sp=0x2488d1b4af48 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388953108Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.388963928Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389004519Z",
+    "stream": "stderr",
+    "text": "runtime.(*cleanupQueue).dequeue(0x10860a0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389054259Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:522 +0xd4 fp=0x2488d1b4afa0 sp=0x2488d1b4af68 pc=0x42a634"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389065879Z",
+    "stream": "stderr",
+    "text": "runtime.runCleanups()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38913905Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:718 +0x45 fp=0x2488d1b4afe0 sp=0x2488d1b4afa0 pc=0x42aca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38916842Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.38921846Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4afe8 sp=0x2488d1b4afe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389268591Z",
+    "stream": "stderr",
+    "text": "created by runtime.(*cleanupQueue).createGs in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389293511Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:672 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389295181Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389315891Z",
+    "stream": "stderr",
+    "text": "goroutine 23 gp=0x2488d1d2c1e0 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389399772Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x2488d1b50690?, 0x2?, 0x3b?, 0x94?, 0x2488d1b50664?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389493432Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b50500 sp=0x2488d1b504e0 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389536903Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0x2488d1b50690, 0x2488d1b50660, 0x819673?, 0x0, 0x2488d1b50678?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389601833Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0x2488d1b50630 sp=0x2488d1b50500 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389682854Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*controlBuffer).get(0x2488d1bb8d80, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389686034Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:420 +0x10a fp=0x2488d1b506c0 sp=0x2488d1b50630 pc=0x7f8d0a"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389708024Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*loopyWriter).run(0x2488d1e18000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389771035Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:597 +0x78 fp=0x2488d1b50720 sp=0x2488d1b506c0 pc=0x7f94b8"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389772745Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.func3()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389837415Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:342 +0xdc fp=0x2488d1b507e0 sp=0x2488d1b50720 pc=0x80fa7c"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389884415Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389925426Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b507e8 sp=0x2488d1b507e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389929806Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 22"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389983966Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:340 +0x18e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.389985766Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390020777Z",
+    "stream": "stderr",
+    "text": "goroutine 24 gp=0x2488d1d2c3c0 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390151498Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x2488d1b4bf50?, 0x4?, 0x70?, 0x0?, 0x2488d1b4bec0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390208348Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b4bd48 sp=0x2488d1b4bd28 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390246308Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0x2488d1b4bf50, 0x2488d1b4beb8, 0x0?, 0x0, 0x0?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390317039Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0x2488d1b4be78 sp=0x2488d1b4bd48 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390356209Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0x2488d1c93380)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39041322Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:1203 +0x1e5 fp=0x2488d1b4bfc8 sp=0x2488d1b4be78 pc=0x816de5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39041511Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39049419Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x17 fp=0x2488d1b4bfe0 sp=0x2488d1b4bfc8 pc=0x80f977"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390547801Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390560201Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b4bfe8 sp=0x2488d1b4bfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390607151Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 22"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390645131Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x1929"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390646551Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390663842Z",
+    "stream": "stderr",
+    "text": "goroutine 25 gp=0x2488d1d2c5a0 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390754662Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x2488d1b5dd68?, 0x81200c?, 0x20?, 0x35?, 0xb?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390812513Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0x2488d1b5da38 sp=0x2488d1b5da18 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390885593Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0x4d7c98?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.390934794Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0x2488d1b5da70 sp=0x2488d1b5da38 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391014444Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f67ddb1ec00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391039905Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0x2488d1b5da90 sp=0x2488d1b5da70 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391070345Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0x2488d1cb2900?, 0x2488d1d2e000?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391147605Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0x2488d1b5dab8 sp=0x2488d1b5da90 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391180606Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391182606Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391254966Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Read(0x2488d1cb2900, {0x2488d1d2e000, 0x8000, 0x8000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391317497Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:165 +0x2ae fp=0x2488d1b5db50 sp=0x2488d1b5dab8 pc=0x4f7a6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391414847Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).Read(0x2488d1cb2900, {0x2488d1d2e000?, 0x2488d1bbb160?, 0x2488d1b5dbe0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391468288Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_posix.go:68 +0x25 fp=0x2488d1b5db98 sp=0x2488d1b5db50 pc=0x578e65"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391533418Z",
+    "stream": "stderr",
+    "text": "net.(*conn).Read(0x2488d1b8a2a0, {0x2488d1d2e000?, 0x48560c?, 0xa59aa0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391567469Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/net.go:196 +0x45 fp=0x2488d1b5dbe0 sp=0x2488d1b5db98 pc=0x588145"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391651179Z",
+    "stream": "stderr",
+    "text": "bufio.(*Reader).Read(0x2488d1bb6e40, {0x2488d1d36044, 0x9, 0x4e48da?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.3917157Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0x2488d1b5dc18 sp=0x2488d1b5dbe0 pc=0x5f3e77"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39179842Z",
+    "stream": "stderr",
+    "text": "io.ReadAtLeast({0xb24fe0, 0x2488d1bb6e40}, {0x2488d1d36044, 0x9, 0x9}, 0x9)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391840361Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:335 +0x8e fp=0x2488d1b5dc60 sp=0x2488d1b5dc18 pc=0x4cdbce"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391842901Z",
+    "stream": "stderr",
+    "text": "io.ReadFull(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391870911Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:354"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.391977582Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.readFrameHeader({0x2488d1d36044, 0x9, 0x813b72?}, {0xb24fe0?, 0x2488d1bb6e40?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392052932Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:250 +0x65 fp=0x2488d1b5dcb0 sp=0x2488d1b5dc60 pc=0x7e6f85"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392054742Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.(*Framer).ReadFrameHeader(0x2488d1d36000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392109683Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:513 +0x6b fp=0x2488d1b5dd38 sp=0x2488d1b5dcb0 pc=0x7e764b"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392130563Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*framer).readFrame(0x2488d1cb2980)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392217994Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http_util.go:480 +0x45 fp=0x2488d1b5dd78 sp=0x2488d1b5dd38 pc=0x81a0e5"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392287524Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0x2488d1c93380, {0xb29c20, 0x2488d1cf1cb0}, 0x2488d1cf1ce0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392388505Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:638 +0xff fp=0x2488d1b5de98 sp=0x2488d1b5dd78 pc=0x8126bf"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392480136Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams(0x2488d1caeb48, {0xb29be8?, 0x10b2dc0?}, {0xb2a140, 0x2488d1c93380}, {0xb31c18?, 0x2488d1b8a2a0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392556616Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1059 +0x368 fp=0x2488d1b5df70 sp=0x2488d1b5de98 pc=0x888ba8"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392559406Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleRawConn.func1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392628677Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:993 +0x56 fp=0x2488d1b5dfe0 sp=0x2488d1b5df70 pc=0x888376"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392630657Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392714107Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0x2488d1b5dfe8 sp=0x2488d1b5dfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392715717Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 22"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392767118Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:992 +0x1cb"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392769328Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392786998Z",
+    "stream": "stderr",
+    "text": "rax    0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392788778Z",
+    "stream": "stderr",
+    "text": "rbx    0x6b"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392811068Z",
+    "stream": "stderr",
+    "text": "rcx    0x7f682769eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392813438Z",
+    "stream": "stderr",
+    "text": "rdx    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392845878Z",
+    "stream": "stderr",
+    "text": "rdi    0x6b"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392847438Z",
+    "stream": "stderr",
+    "text": "rsi    0x6b"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392864609Z",
+    "stream": "stderr",
+    "text": "rbp    0x7ffcb1d5f700"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392866359Z",
+    "stream": "stderr",
+    "text": "rsp    0x7ffcb1d5f6c0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392886369Z",
+    "stream": "stderr",
+    "text": "r8     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392888059Z",
+    "stream": "stderr",
+    "text": "r9     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392914819Z",
+    "stream": "stderr",
+    "text": "r10    0x8"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392916739Z",
+    "stream": "stderr",
+    "text": "r11    0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392935749Z",
+    "stream": "stderr",
+    "text": "r12    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392957959Z",
+    "stream": "stderr",
+    "text": "r13    0x55555e593a10"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392964959Z",
+    "stream": "stderr",
+    "text": "r14    0x16"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.392976279Z",
+    "stream": "stderr",
+    "text": "r15    0x7ffcb1d5f8c2"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39300631Z",
+    "stream": "stderr",
+    "text": "rip    0x7f682769eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39300794Z",
+    "stream": "stderr",
+    "text": "rflags 0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39303371Z",
+    "stream": "stderr",
+    "text": "cs     0x33"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39303559Z",
+    "stream": "stderr",
+    "text": "fs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:22:29.39305426Z",
+    "stream": "stderr",
+    "text": "gs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.180066717Z",
+    "stream": "stderr",
+    "text": "+++ realpath run.sh"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.182466775Z",
+    "stream": "stderr",
+    "text": "++ dirname /backends/intel-sycl-f16-stablediffusion-ggml/run.sh"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.184627101Z",
+    "stream": "stderr",
+    "text": "+ CURDIR=/backends/intel-sycl-f16-stablediffusion-ggml"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.184631301Z",
+    "stream": "stderr",
+    "text": "+ cd /"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.184642481Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU info:'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.184726072Z",
+    "stream": "stdout",
+    "text": "CPU info:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.185033564Z",
+    "stream": "stderr",
+    "text": "++ uname"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.186885538Z",
+    "stream": "stderr",
+    "text": "+ '[' Linux '!=' Darwin ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.18722656Z",
+    "stream": "stderr",
+    "text": "+ grep -e 'model\\sname' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.187461292Z",
+    "stream": "stderr",
+    "text": "+ head -1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.188821222Z",
+    "stream": "stdout",
+    "text": "model name\t: AMD Ryzen 7 2700 Eight-Core Processor"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.189469327Z",
+    "stream": "stderr",
+    "text": "+ grep -e flags /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.189474047Z",
+    "stream": "stderr",
+    "text": "+ head -1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.191495812Z",
+    "stream": "stdout",
+    "text": "flags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.192281738Z",
+    "stream": "stderr",
+    "text": "++ uname"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.193410776Z",
+    "stream": "stderr",
+    "text": "+ '[' Linux = Darwin ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.193412486Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-fallback.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.193506237Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.19521793Z",
+    "stream": "stdout",
+    "text": "CPU:    AVX    found OK"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.19523034Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU:    AVX    found OK'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.19523246Z",
+    "stream": "stderr",
+    "text": "+ '[' -e /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.19529875Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.19530026Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx2\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.196899042Z",
+    "stream": "stdout",
+    "text": "CPU:    AVX2   found OK"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.196910092Z",
+    "stream": "stderr",
+    "text": "+ echo 'CPU:    AVX2   found OK'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.196911972Z",
+    "stream": "stderr",
+    "text": "+ '[' -e /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.196987333Z",
+    "stream": "stderr",
+    "text": "+ LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.196988933Z",
+    "stream": "stderr",
+    "text": "+ grep -q -e '\\savx512f\\s' /proc/cpuinfo"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.198894767Z",
+    "stream": "stderr",
+    "text": "+ export LD_LIBRARY_PATH=/backends/intel-sycl-f16-stablediffusion-ggml/lib:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.17/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.17/lib:/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/ippcp/2025.3/lib/:/opt/intel/oneapi/ipp/2022.3/lib:/opt/intel/oneapi/dnnl/2025.3/lib:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/dal/2025.11/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib:/opt/intel/oneapi/ccl/2021.17/lib/"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.198899577Z",
+    "stream": "stderr",
+    "text": "+ LD_LIBRARY_PATH=/backends/intel-sycl-f16-stablediffusion-ggml/lib:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.17/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.17/lib:/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/ippcp/2025.3/lib/:/opt/intel/oneapi/ipp/2022.3/lib:/opt/intel/oneapi/dnnl/2025.3/lib:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/dal/2025.11/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib:/opt/intel/oneapi/ccl/2021.17/lib/"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.198987408Z",
+    "stream": "stderr",
+    "text": "+ export SD_LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.198989058Z",
+    "stream": "stderr",
+    "text": "+ SD_LIBRARY=/backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.199044428Z",
+    "stream": "stderr",
+    "text": "+ '[' -f /backends/intel-sycl-f16-stablediffusion-ggml/lib/ld.so ']'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.199046548Z",
+    "stream": "stderr",
+    "text": "+ echo 'Using lib/ld.so'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.199077398Z",
+    "stream": "stdout",
+    "text": "Using lib/ld.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.199092498Z",
+    "stream": "stderr",
+    "text": "+ echo 'Using library: /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.199119769Z",
+    "stream": "stdout",
+    "text": "Using library: /backends/intel-sycl-f16-stablediffusion-ggml/libgosd-avx2.so"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.199124099Z",
+    "stream": "stderr",
+    "text": "+ exec /backends/intel-sycl-f16-stablediffusion-ggml/lib/ld.so /backends/intel-sycl-f16-stablediffusion-ggml/stablediffusion-ggml --addr 127.0.0.1:37317"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:13.292760765Z",
+    "stream": "stderr",
+    "text": "2026/08/29 21:25:13 gRPC Server listening at 127.0.0.1:37317"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180809801Z",
+    "stream": "stderr",
+    "text": "Options: [clip_l_path:/models/clip_l.safetensors clip_g_path:/models/clip_g.safetensors t5xxl_path:/models/t5xxl-Q5_0.gguf sampler:euler]"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180814051Z",
+    "stream": "stderr",
+    "text": "Loading model: 0xae8dd49c540=/models/sd3.5_large-Q4_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180821041Z",
+    "stream": "stderr",
+    "text": "parsing options: 0xae8dd496780"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180822551Z",
+    "stream": "stderr",
+    "text": "parsed options"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180835831Z",
+    "stream": "stderr",
+    "text": "Creating context"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180946382Z",
+    "stream": "stderr",
+    "text": "LoRA model directory set to: //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.180948792Z",
+    "stream": "stderr",
+    "text": "Discovering LoRA files in: //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181259255Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: sd3.5_large-Q4_0 -> //models/sd3.5_large-Q4_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181261625Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: clip_g -> //models/clip_g.safetensors"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181267835Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: clip_l -> //models/clip_l.safetensors"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181269145Z",
+    "stream": "stderr",
+    "text": "Found LoRA file: t5xxl-Q5_0 -> //models/t5xxl-Q5_0.gguf"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181276125Z",
+    "stream": "stderr",
+    "text": "Discovered 4 LoRA files in //models"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181278555Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:228  - using 8 threads for model loading"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181284975Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:713  - loading model from '/models/sd3.5_large-Q4_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181286165Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:236  - load /models/sd3.5_large-Q4_0.gguf using gguf format"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.181296135Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:288  - init from '/models/sd3.5_large-Q4_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.19268841Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:741  - loading clip_l from '/models/clip_l.safetensors'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.193247804Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:242  - load /models/clip_l.safetensors using safetensors format"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.193254194Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:316  - init from '/models/clip_l.safetensors', prefix = 'clip_l.'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.194390762Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:748  - loading clip_g from '/models/clip_g.safetensors'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.195812013Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:242  - load /models/clip_g.safetensors using safetensors format"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.195821123Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:316  - init from '/models/clip_g.safetensors', prefix = 'clip_g.'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.199068707Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:762  - loading t5xxl from '/models/t5xxl-Q5_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.199071847Z",
+    "stream": "stderr",
+    "text": "[INFO ] model_loader.cpp:236  - load /models/t5xxl-Q5_0.gguf using gguf format"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.199078287Z",
+    "stream": "stderr",
+    "text": "[DEBUG] model_loader.cpp:288  - init from '/models/t5xxl-Q5_0.gguf'"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.239412237Z",
+    "stream": "stderr",
+    "text": "[INFO ] stable-diffusion.cpp:908  - Version: SD3.x "
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.302251214Z",
+    "stream": "stdout",
+    "text": "Abort was called at 15 line in file:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.302258844Z",
+    "stream": "stdout",
+    "text": "./shared/source/gmm_helper/resource_info.cpp"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30437856Z",
+    "stream": "stderr",
+    "text": "SIGABRT: abort"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.3043828Z",
+    "stream": "stderr",
+    "text": "PC=0x7f389e29eb2c m=4 sigcode=18446744073709551610"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30438997Z",
+    "stream": "stderr",
+    "text": "signal arrived during cgo execution"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30439137Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30439775Z",
+    "stream": "stderr",
+    "text": "goroutine 19 gp=0xae8dd501680 m=4 mp=0xae8dd441808 [syscall]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30439913Z",
+    "stream": "stderr",
+    "text": "runtime.cgocall(0x907e00, 0xae8dd5c8000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30443555Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/cgocall.go:167 +0x4b fp=0xae8dd51ad48 sp=0xae8dd51ad10 pc=0x484bcb"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304537131Z",
+    "stream": "stderr",
+    "text": "github.com/ebitengine/purego.RegisterFunc.func4({0xae8dd78ca80, 0x5, 0x5})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304540101Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/github.com/ebitengine/purego@v0.10.0/func.go:322 +0x59c fp=0xae8dd51b198 sp=0xae8dd51ad48 pc=0x90457c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304547381Z",
+    "stream": "stderr",
+    "text": "reflect.callReflect(0xae8dd4a4090, 0xae8dd51b658, 0xae8dd51b530, 0xae8dd51b538)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304617981Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/reflect/value.go:772 +0x5f6 fp=0xae8dd51b4e0 sp=0xae8dd51b198 pc=0x4b9596"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304667092Z",
+    "stream": "stderr",
+    "text": "reflect.callReflect(0xae8dd4a4090, 0xae8dd51b658, 0xae8dd51b530, 0xae8dd51b538)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304749862Z",
+    "stream": "stderr",
+    "text": "\t<autogenerated>:1 +0x2e fp=0xae8dd51b510 sp=0xae8dd51b4e0 pc=0x4cae6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304754072Z",
+    "stream": "stderr",
+    "text": "reflect.makeFuncStub()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304782043Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/reflect/asm_amd64.s:47 +0x5c fp=0xae8dd51b658 sp=0xae8dd51b510 pc=0x4c7bfc"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304784913Z",
+    "stream": "stderr",
+    "text": "main.(*SDGGML).Load(0xae8dd4b6000, 0xae8dd4ec008)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304929984Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/backend/go/stablediffusion-ggml/gosd.go:165 +0x743 fp=0xae8dd51b810 sp=0xae8dd51b658 pc=0x917303"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304933784Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc.(*server).LoadModel(0xae8dd4ce080, {0xadd580?, 0x526f53?}, 0xae8dd4ec008)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.304979424Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/server.go:111 +0xe2 fp=0xae8dd51b8c0 sp=0xae8dd51b810 pc=0x90b5a2"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305019424Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc/proto._Backend_LoadModel_Handler({0xadd580, 0xae8dd4ce080}, {0xb29c20, 0xae8dd4a5320}, 0xae8dd4ba200, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305117685Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/proto/backend_grpc.pb.go:1249 +0x1a9 fp=0xae8dd51b910 sp=0xae8dd51b8c0 pc=0x8b8269"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305260746Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).processUnaryRPC(0xae8dd4b4488, {0xb29c20, 0xae8dd4a5290}, 0xae8dd4d6340, 0xae8dd4a4fc0, 0x1079688, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305264296Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1430 +0x11d2 fp=0xae8dd51bdd0 sp=0xae8dd51b910 pc=0x88b4d2"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305304977Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleStream(0xae8dd4b4488, {0xb2a140, 0xae8dd634000}, 0xae8dd4d6340)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305343087Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1856 +0xbc6 fp=0xae8dd51bf78 sp=0xae8dd51bdd0 pc=0x890626"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305397557Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams.func2.1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305442768Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1065 +0x7f fp=0xae8dd51bfe0 sp=0xae8dd51bf78 pc=0x888dff"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305446498Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305519768Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd51bfe8 sp=0xae8dd51bfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305523938Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).serveStreams.func2 in goroutine 36"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305538278Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1076 +0x11d"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305540358Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305620069Z",
+    "stream": "stderr",
+    "text": "goroutine 1 gp=0xae8dd3981e0 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305645209Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30575577Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd58f8b0 sp=0xae8dd58f890 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30576037Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0xae8dd58f900?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305858051Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xae8dd58f8e8 sp=0xae8dd58f8b0 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305862221Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f385774dc00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.305935661Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xae8dd58f908 sp=0xae8dd58f8e8 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306001642Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0xae8dd4ba000?, 0x900000036?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306043292Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xae8dd58f930 sp=0xae8dd58f908 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306046012Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306057982Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306059922Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Accept(0xae8dd4ba000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306172273Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:613 +0x28c fp=0xae8dd58f9d8 sp=0xae8dd58f930 pc=0x4fb8cc"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306174383Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).accept(0xae8dd4ba000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306227373Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_unix.go:150 +0x29 fp=0xae8dd58fa90 sp=0xae8dd58f9d8 pc=0x57aba9"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306233123Z",
+    "stream": "stderr",
+    "text": "net.(*TCPListener).accept(0xae8dd4ce000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306263054Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/tcpsock_posix.go:159 +0x1b fp=0xae8dd58fae0 sp=0xae8dd58fa90 pc=0x590d3b"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306280414Z",
+    "stream": "stderr",
+    "text": "net.(*TCPListener).Accept(0xae8dd4ce000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306374054Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/tcpsock.go:387 +0x30 fp=0xae8dd58fb10 sp=0xae8dd58fae0 pc=0x58ffd0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306398705Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).Serve(0xae8dd4b4488, {0xb29298, 0xae8dd4ce000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306531876Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:921 +0x45c fp=0xae8dd58fc50 sp=0xae8dd58fb10 pc=0x88793c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306534356Z",
+    "stream": "stderr",
+    "text": "github.com/mudler/LocalAI/pkg/grpc.StartServer({0x7fff5a3d1aa5?, 0xae8dd3ca190?}, {0xb39000, 0xae8dd4b6000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306545396Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/pkg/grpc/server.go:1104 +0x165 fp=0xae8dd58fcd8 sp=0xae8dd58fc50 pc=0x916285"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306546656Z",
+    "stream": "stderr",
+    "text": "main.main()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306612746Z",
+    "stream": "stderr",
+    "text": "\t/LocalAI/backend/go/stablediffusion-ggml/main.go:65 +0x33a fp=0xae8dd58ff48 sp=0xae8dd58fcd8 pc=0x91821a"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306616716Z",
+    "stream": "stderr",
+    "text": "runtime.main()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306724817Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:290 +0x2d5 fp=0xae8dd58ffe0 sp=0xae8dd58ff48 pc=0x4533d5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306728387Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306735887Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd58ffe8 sp=0xae8dd58ffe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306737737Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306767817Z",
+    "stream": "stderr",
+    "text": "goroutine 2 gp=0xae8dd398d20 m=nil [force gc (idle)]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306880498Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306884218Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd43cfa8 sp=0xae8dd43cf88 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306912878Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306953479Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.306957129Z",
+    "stream": "stderr",
+    "text": "runtime.forcegchelper()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307016529Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:375 +0xb3 fp=0xae8dd43cfe0 sp=0xae8dd43cfa8 pc=0x4536f3"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307021539Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30708837Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd43cfe8 sp=0xae8dd43cfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30709704Z",
+    "stream": "stderr",
+    "text": "created by runtime.init.7 in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30713845Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:363 +0x1a"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.3071411Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307234701Z",
+    "stream": "stderr",
+    "text": "goroutine 3 gp=0xae8dd3992c0 m=nil [GC sweep wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307284781Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307345772Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd43d788 sp=0xae8dd43d768 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307349782Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307378082Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307381132Z",
+    "stream": "stderr",
+    "text": "runtime.bgsweep(0xae8dd466000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307459863Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcsweep.go:279 +0x94 fp=0xae8dd43d7c8 sp=0xae8dd43d788 pc=0x43d414"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307464513Z",
+    "stream": "stderr",
+    "text": "runtime.gcenable.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307522723Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:214 +0x17 fp=0xae8dd43d7e0 sp=0xae8dd43d7c8 pc=0x42e877"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307579913Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307626564Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd43d7e8 sp=0xae8dd43d7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307629354Z",
+    "stream": "stderr",
+    "text": "created by runtime.gcenable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307646504Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:214 +0x66"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307648614Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307736635Z",
+    "stream": "stderr",
+    "text": "goroutine 4 gp=0xae8dd3994a0 m=nil [GC scavenge wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307838575Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0xae8dd466000?, 0xb1d8f0?, 0x1?, 0x0?, 0xae8dd3994a0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307854515Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd43df78 sp=0xae8dd43df58 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307868556Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307871066Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307890266Z",
+    "stream": "stderr",
+    "text": "runtime.(*scavengerState).park(0x1085d20)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307892456Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcscavenge.go:425 +0x49 fp=0xae8dd43dfa8 sp=0xae8dd43df78 pc=0x43af49"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.307930286Z",
+    "stream": "stderr",
+    "text": "runtime.bgscavenge(0xae8dd466000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308013517Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgcscavenge.go:653 +0x3c fp=0xae8dd43dfc8 sp=0xae8dd43dfa8 pc=0x43b4bc"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308016627Z",
+    "stream": "stderr",
+    "text": "runtime.gcenable.gowrap2()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308032897Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:215 +0x17 fp=0xae8dd43dfe0 sp=0xae8dd43dfc8 pc=0x42e837"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308034217Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308113427Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd43dfe8 sp=0xae8dd43dfe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308118047Z",
+    "stream": "stderr",
+    "text": "created by runtime.gcenable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308133048Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mgc.go:215 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308135048Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308221548Z",
+    "stream": "stderr",
+    "text": "goroutine 5 gp=0xae8dd399a40 m=nil [GOMAXPROCS updater (idle)]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308224028Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308293639Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd43e788 sp=0xae8dd43e768 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308295129Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308303449Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308304669Z",
+    "stream": "stderr",
+    "text": "runtime.updateMaxProcsGoroutine()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308369779Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:7095 +0xe7 fp=0xae8dd43e7e0 sp=0xae8dd43e788 pc=0x461b87"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308371539Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30843615Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd43e7e8 sp=0xae8dd43e7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30843792Z",
+    "stream": "stderr",
+    "text": "created by runtime.defaultGOMAXPROCSUpdateEnable in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30844763Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:7083 +0x37"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30844879Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30846655Z",
+    "stream": "stderr",
+    "text": "goroutine 6 gp=0xae8dd5001e0 m=nil [finalizer wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308529281Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x462bd5?, 0x1c8?, 0x80?, 0x46?, 0xae8dd43c601?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308582981Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd43c620 sp=0xae8dd43c600 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308584941Z",
+    "stream": "stderr",
+    "text": "runtime.runFinalizers()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308649041Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mfinal.go:210 +0x107 fp=0xae8dd43c7e0 sp=0xae8dd43c620 pc=0x42d7e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308650791Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308718222Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd43c7e8 sp=0xae8dd43c7e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308719832Z",
+    "stream": "stderr",
+    "text": "created by runtime.createfing in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308725602Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mfinal.go:172 +0x3d"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308726732Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308740602Z",
+    "stream": "stderr",
+    "text": "goroutine 7 gp=0xae8dd500d20 m=nil [cleanup wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308800683Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308856163Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd43ef68 sp=0xae8dd43ef48 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308857793Z",
+    "stream": "stderr",
+    "text": "runtime.goparkunlock(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308870073Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:468"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308871293Z",
+    "stream": "stderr",
+    "text": "runtime.(*cleanupQueue).dequeue(0x10860a0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308937144Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:522 +0xd4 fp=0xae8dd43efa0 sp=0xae8dd43ef68 pc=0x42a634"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.308938654Z",
+    "stream": "stderr",
+    "text": "runtime.runCleanups()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309006034Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:718 +0x45 fp=0xae8dd43efe0 sp=0xae8dd43efa0 pc=0x42aca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309007784Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309073995Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd43efe8 sp=0xae8dd43efe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309075425Z",
+    "stream": "stderr",
+    "text": "created by runtime.(*cleanupQueue).createGs in goroutine 1"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309081715Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/mcleanup.go:672 +0xa5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309082835Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309096815Z",
+    "stream": "stderr",
+    "text": "goroutine 35 gp=0xae8dd5014a0 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309161925Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0xae8dd438750?, 0x4?, 0x70?, 0x0?, 0xae8dd4386c0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309230976Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd438548 sp=0xae8dd438528 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309314886Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0xae8dd438750, 0xae8dd4386b8, 0xaa3fe0?, 0x0, 0xae8dd4386c0?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309319336Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0xae8dd438678 sp=0xae8dd438548 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309340597Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0xae8dd634000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309380047Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:1203 +0x1e5 fp=0xae8dd4387c8 sp=0xae8dd438678 pc=0x816de5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309383497Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.gowrap1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309450427Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x17 fp=0xae8dd4387e0 sp=0xae8dd4387c8 pc=0x80f977"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309494298Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309546158Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd4387e8 sp=0xae8dd4387e0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309548288Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 12"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309594748Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:363 +0x1929"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309598258Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309672909Z",
+    "stream": "stderr",
+    "text": "goroutine 34 gp=0xae8dd501860 m=nil [select]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309730589Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0xae8dd60ae90?, 0x2?, 0x3b?, 0x94?, 0xae8dd60ae64?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30978447Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd60ad00 sp=0xae8dd60ace0 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.30984962Z",
+    "stream": "stderr",
+    "text": "runtime.selectgo(0xae8dd60ae90, 0xae8dd60ae60, 0x819673?, 0x0, 0xae8dd60ae78?, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309921361Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/select.go:351 +0xaa5 fp=0xae8dd60ae30 sp=0xae8dd60ad00 pc=0x4666a5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.309924431Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xae8dd642000, 0x1)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310003751Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:420 +0x10a fp=0xae8dd60aec0 sp=0xae8dd60ae30 pc=0x7f8d0a"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310007842Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xae8dd708000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310074492Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/controlbuf.go:597 +0x78 fp=0xae8dd60af20 sp=0xae8dd60aec0 pc=0x7f94b8"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310078142Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.NewServerTransport.func3()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310153693Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:342 +0xdc fp=0xae8dd60afe0 sp=0xae8dd60af20 pc=0x80fa7c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310156653Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310290644Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd60afe8 sp=0xae8dd60afe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310294064Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 12"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310303384Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:340 +0x18e7"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310305994Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310348334Z",
+    "stream": "stderr",
+    "text": "goroutine 36 gp=0xae8dd646000 m=nil [IO wait]:"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310424115Z",
+    "stream": "stderr",
+    "text": "runtime.gopark(0xae8dd60ea48?, 0x7f3854142128?, 0xe0?, 0xb?, 0xb?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310426885Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/proc.go:462 +0xce fp=0xae8dd60ea38 sp=0xae8dd60ea18 pc=0x487ace"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310532015Z",
+    "stream": "stderr",
+    "text": "runtime.netpollblock(0x4d7c98?, 0x41a406?, 0x0?)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310534395Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xae8dd60ea70 sp=0xae8dd60ea38 pc=0x44bf97"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310562546Z",
+    "stream": "stderr",
+    "text": "internal/poll.runtime_pollWait(0x7f385774da00, 0x72)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310648556Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xae8dd60ea90 sp=0xae8dd60ea70 pc=0x486ca5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310651156Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).wait(0xae8dd3f6f00?, 0xae8dd628000?, 0x0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310675626Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xae8dd60eab8 sp=0xae8dd60ea90 pc=0x4f6847"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310758967Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*pollDesc).waitRead(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310761587Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_poll_runtime.go:89"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310780797Z",
+    "stream": "stderr",
+    "text": "internal/poll.(*FD).Read(0xae8dd3f6f00, {0xae8dd628000, 0x8000, 0x8000})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310881198Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/internal/poll/fd_unix.go:165 +0x2ae fp=0xae8dd60eb50 sp=0xae8dd60eab8 pc=0x4f7a6e"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310883678Z",
+    "stream": "stderr",
+    "text": "net.(*netFD).Read(0xae8dd3f6f00, {0xae8dd628000?, 0xae8dd494507?, 0xae8dd60ebe0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310911038Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/fd_posix.go:68 +0x25 fp=0xae8dd60eb98 sp=0xae8dd60eb50 pc=0x578e65"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310997389Z",
+    "stream": "stderr",
+    "text": "net.(*conn).Read(0xae8dd3962a0, {0xae8dd628000?, 0x48560c?, 0xa59aa0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.310999939Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/net/net.go:196 +0x45 fp=0xae8dd60ebe0 sp=0xae8dd60eb98 pc=0x588145"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.31110939Z",
+    "stream": "stderr",
+    "text": "bufio.(*Reader).Read(0xae8dd604120, {0xae8dd630044, 0x9, 0x4e48da?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.31111178Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0xae8dd60ec18 sp=0xae8dd60ebe0 pc=0x5f3e77"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311250591Z",
+    "stream": "stderr",
+    "text": "io.ReadAtLeast({0xb24fe0, 0xae8dd604120}, {0xae8dd630044, 0x9, 0x9}, 0x9)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311254711Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:335 +0x8e fp=0xae8dd60ec60 sp=0xae8dd60ec18 pc=0x4cdbce"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311266741Z",
+    "stream": "stderr",
+    "text": "io.ReadFull(...)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311268621Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/io/io.go:354"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311366652Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.readFrameHeader({0xae8dd630044, 0x9, 0x813b72?}, {0xb24fe0?, 0xae8dd604120?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311370752Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:250 +0x65 fp=0xae8dd60ecb0 sp=0xae8dd60ec60 pc=0x7e6f85"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311405272Z",
+    "stream": "stderr",
+    "text": "golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xae8dd630000)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311463032Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/x/net@v0.55.0/http2/frame.go:513 +0x6b fp=0xae8dd60ed38 sp=0xae8dd60ecb0 pc=0x7e764b"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311465752Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*framer).readFrame(0xae8dd606100)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311560333Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http_util.go:480 +0x45 fp=0xae8dd60ed78 sp=0xae8dd60ed38 pc=0x81a0e5"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311564423Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0xae8dd634000, {0xb29c20, 0xae8dd602270}, 0xae8dd6022a0)"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311697734Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/internal/transport/http2_server.go:638 +0xff fp=0xae8dd60ee98 sp=0xae8dd60ed78 pc=0x8126bf"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311701164Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).serveStreams(0xae8dd4b4488, {0xb29be8?, 0x10b2dc0?}, {0xb2a140, 0xae8dd634000}, {0xb31c18?, 0xae8dd3962a0?})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311824375Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:1059 +0x368 fp=0xae8dd60ef70 sp=0xae8dd60ee98 pc=0x888ba8"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311852295Z",
+    "stream": "stderr",
+    "text": "google.golang.org/grpc.(*Server).handleRawConn.func1()"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311862975Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:993 +0x56 fp=0xae8dd60efe0 sp=0xae8dd60ef70 pc=0x888376"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311864665Z",
+    "stream": "stderr",
+    "text": "runtime.goexit({})"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311882225Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.0.linux-amd64/src/runtime/asm_amd64.s:1771 +0x1 fp=0xae8dd60efe8 sp=0xae8dd60efe0 pc=0x48ec81"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311883995Z",
+    "stream": "stderr",
+    "text": "created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 12"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311910246Z",
+    "stream": "stderr",
+    "text": "\t/root/go/pkg/mod/google.golang.org/grpc@v1.80.0/server.go:992 +0x1cb"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311912126Z",
+    "stream": "stderr",
+    "text": ""
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311926206Z",
+    "stream": "stderr",
+    "text": "rax    0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311930186Z",
+    "stream": "stderr",
+    "text": "rbx    0x8c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311960086Z",
+    "stream": "stderr",
+    "text": "rcx    0x7f389e29eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311962316Z",
+    "stream": "stderr",
+    "text": "rdx    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311981766Z",
+    "stream": "stderr",
+    "text": "rdi    0x7d"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311983656Z",
+    "stream": "stderr",
+    "text": "rsi    0x8c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.311997976Z",
+    "stream": "stderr",
+    "text": "rbp    0x7f385673a7f0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312003086Z",
+    "stream": "stderr",
+    "text": "rsp    0x7f385673a7b0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312083727Z",
+    "stream": "stderr",
+    "text": "r8     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312087087Z",
+    "stream": "stderr",
+    "text": "r9     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312096677Z",
+    "stream": "stderr",
+    "text": "r10    0x8"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312098777Z",
+    "stream": "stderr",
+    "text": "r11    0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312107637Z",
+    "stream": "stderr",
+    "text": "r12    0x6"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312109787Z",
+    "stream": "stderr",
+    "text": "r13    0x7f384de79aa0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312128357Z",
+    "stream": "stderr",
+    "text": "r14    0x16"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312130797Z",
+    "stream": "stderr",
+    "text": "r15    0x7f385673a9b2"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312139327Z",
+    "stream": "stderr",
+    "text": "rip    0x7f389e29eb2c"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312142277Z",
+    "stream": "stderr",
+    "text": "rflags 0x246"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312158458Z",
+    "stream": "stderr",
+    "text": "cs     0x33"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312160918Z",
+    "stream": "stderr",
+    "text": "fs     0x0"
+  },
+  {
+    "timestamp": "2026-08-29T21:25:15.312175498Z",
+    "stream": "stderr",
+    "text": "gs     0x0"
+  }
+]

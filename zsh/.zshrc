@@ -24,4 +24,4 @@ function y() {
 	command rm -f -- "$tmp"
 }
 
-fastfetch
+alias dots="cd ~/.dotfiles"

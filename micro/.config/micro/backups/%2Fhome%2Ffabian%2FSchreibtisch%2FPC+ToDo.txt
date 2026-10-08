@@ -1,0 +1,8 @@
+- Server mit Storage Box backupen (Rclone plugin)
+	- SeaFile
+		- Seafile als Remote in Rsync hinzufügen, damit Dateien am Ende im Klartext auslesbar sind
+- Rechner neu Aufsetzen?
+	- Zu anderem Git wechseln / Repo öffentlich machen
+	- Backup der Ordner auf Server schieben
+	- Steam-Games Backuppen
+	- Cachy ohne Opinions und DE installieren

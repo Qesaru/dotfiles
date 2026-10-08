@@ -1,0 +1,4 @@
+temp/
+micro/backups/
+micro/buffers/
+*.log
